@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BleAir</string>
+    <string name="no_cloud_connection">No Cloud Connection</string>
+    <string name="no_device">[No device]</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect">Connect</string>
+</resources>
