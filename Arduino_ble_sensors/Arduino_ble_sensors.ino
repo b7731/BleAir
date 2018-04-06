@@ -16,13 +16,13 @@ DHT dht(DHTPIN, DHTTYPE);
 BLEPeripheral blePeripheral = BLEPeripheral(BLE_REQ, BLE_RDY, BLE_RST);
 BLEBondStore bleBondStore;
 
-BLEService tempService = BLEService("AAA0");
-BLELongCharacteristic tempCharacteristic = BLELongCharacteristic("BBB0", BLERead | BLENotify);
-BLEDescriptor tempDescriptor = BLEDescriptor("BBB0", "Temperature");
+BLEService tempService = BLEService("1800");
+BLEFloatCharacteristic tempCharacteristic = BLEFloatCharacteristic("2A00", BLERead | BLENotify);
+BLEDescriptor tempDescriptor = BLEDescriptor("2901", "Temperature");
 
-BLEService humidityService = BLEService("AAA1");
-BLELongCharacteristic humidityCharacteristic = BLELongCharacteristic("BBB1", BLERead | BLENotify);
-BLEDescriptor humidityDescriptor = BLEDescriptor("CCC1", "Humidity");
+BLEService humidityService = BLEService("1801");
+BLEIntCharacteristic humidityCharacteristic = BLEIntCharacteristic("2A01", BLERead | BLENotify);
+BLEDescriptor humidityDescriptor = BLEDescriptor("2901", "Humidity");
 
 volatile bool readFromSensor = false;
 
